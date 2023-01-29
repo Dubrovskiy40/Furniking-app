@@ -1,0 +1,38 @@
+@import "color";
+@import "mixins";
+
+.reviews {
+  margin-bottom: 124px;
+
+  &__carousel-wrap {
+    text-align: center;
+    line-height: 160px;
+    overflow: hidden;
+
+    //max-width: 816px;
+    background: #F8FAFB;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 80px 125px 47px;
+  }
+  &__text {
+    @include font_16;
+    text-align: center;
+    color: $color-dark-grey;
+    margin-bottom: 32px;
+
+  }
+  &__title {
+    @include font_24;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: $color-dark-grey;
+    margin-bottom: 8px;
+  }
+  &__subtitle {
+    @include font_16;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: $color-dark-grey;
+  }
+}

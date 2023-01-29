@@ -1,0 +1,30 @@
+@import 'color';
+@import 'mixins';
+
+.header {
+  background: $background-green;
+  @include font_16;
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  &__select {
+    @include font_16;
+    color: $color-white;
+    margin-left: auto;
+  }
+
+  &__buttons-wrap {
+    display: flex;
+  }
+
+  &__button {
+    @include font_16;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,14 @@
+.our-products {
+  margin-bottom: 124px;
+
+  &__menu {
+    text-align: center;
+    margin-bottom: 73px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}

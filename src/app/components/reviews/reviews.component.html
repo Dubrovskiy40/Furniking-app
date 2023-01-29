@@ -1,0 +1,13 @@
+<section class="reviews">
+  <div class="container">
+    <h1 class="title">What Our Customer Says</h1>
+    <nz-carousel [nzEffect]="effect">
+      <div class="reviews__carousel-wrap" nz-carousel-content *ngFor="let review of reviews">
+        <img src="/assets/images/reviews/avatar.png" alt="avatar">
+        <p class="reviews__text">{{ review.text }}</p>
+        <h2 class="reviews__title">{{ review.autor }}</h2>
+        <h3 class="reviews__subtitle">{{ review.position }}</h3>
+      </div>
+    </nz-carousel>
+  </div>
+</section>

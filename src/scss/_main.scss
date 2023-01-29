@@ -1,0 +1,15 @@
+@import "mixins";
+@import "color";
+
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+.title {
+  @include font_36;
+  text-transform: uppercase;
+  color: $color-black;
+  text-align: center;
+  margin-bottom: 56px;
+}

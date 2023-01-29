@@ -1,0 +1,44 @@
+@import "mixins";
+@import "color";
+
+.footer {
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  &__description {
+    max-width: 318px;
+    margin-bottom: 18px;
+    @include font_16;
+    color: $color-black;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__menu-item {
+    margin-bottom: 18px;
+    @include font_16;
+    color: $color-black;
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0;
+    @include font_14;
+    color: $color-black;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}

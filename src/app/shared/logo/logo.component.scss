@@ -1,0 +1,9 @@
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+
+  & span:first-child  {
+    margin-right: 5px;
+  }
+}

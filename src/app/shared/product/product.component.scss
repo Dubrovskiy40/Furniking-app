@@ -1,0 +1,38 @@
+@import "color";
+@import "mixins";
+
+.product {
+
+  &__type {
+    @include font_14;
+    letter-spacing: 0.008em;
+    text-transform: uppercase;
+    color: rgba(117, 117, 117, 0.71);
+    margin-bottom: 9px;
+  }
+
+  & [nzTitle] {
+    @include font_20;
+    letter-spacing: 0.005em;
+    color: $color-dark-black;
+    margin-bottom: 8px;
+  }
+
+  &__prices {
+
+  }
+
+  &__price {
+    @include font_18;
+    text-align: center;
+    letter-spacing: 0.005em;
+  }
+
+  &__priceDiscount {
+    color: $color-green;
+    margin-right: 7px;
+  }
+  &__priceCurrent {
+    color: $color-white-grey;
+  }
+}

@@ -1,0 +1,11 @@
+<nz-card class="product" nzHoverable style="width:269px" [nzCover]="productTemplate">
+  <span class="product__type">{{ product.type }}</span>
+  <nz-card-meta nzTitle="{{ product.title }}"></nz-card-meta>
+  <div class="product__prices">
+    <span class="product__priceDiscount product__price">{{ product.priceDiscount }}</span>
+    <span class="product__priceCurrent product__price">{{ product.priceCurrent }}</span>
+  </div>
+</nz-card>
+<ng-template #productTemplate>
+  <img alt="product" src="{{ product.imgPath }}" />
+</ng-template>

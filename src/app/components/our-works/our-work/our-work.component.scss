@@ -1,0 +1,40 @@
+@import "src/scss/color";
+@import "src/scss/mixins";
+
+.our-work {
+  border-radius: 8px;
+  padding: 44px;
+  background: url("/assets/images/our-works/Card1.png");
+  // TODO убрать
+  width: 570px;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+
+  &__type {
+    background: $background-white;
+    border-radius: 3px;
+    @include font_12;
+    text-transform: uppercase;
+    margin-right: 5px;
+    padding: 5px;
+    color: $color-green;
+  }
+
+  &__date {
+    @include font_14;
+    color: $color-white;
+  }
+  &__title {
+    @include font_39;
+    color: $color-white;
+    margin: 20px 0 38px 0;
+    max-width: 490px;
+  }
+
+  &__button {
+    @include font_14;
+    color: $color-white;
+    background: transparent;
+  }
+}

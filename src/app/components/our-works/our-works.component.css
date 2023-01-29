@@ -1,0 +1,10 @@
+.our-works {
+  margin-bottom: 124px;
+}
+.our-works__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/*# sourceMappingURL=our-works.component.css.map */
